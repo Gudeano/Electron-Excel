@@ -14,8 +14,8 @@ function createWindow() {
     }
   });
 
-  mainWindow.loadFile(""); // Ruta al archivo index.html de tu aplicación Angular
-
+  mainWindow.loadFile("src/index.html");
+  mainWindow.webContents.openDevTools();
   mainWindow.on('closed', function() {
     mainWindow = null;
   });

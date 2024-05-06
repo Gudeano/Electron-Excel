@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 import { ExcelService } from '../../services/excel.service';
 
 @Component({
-  selector: 'app-excel-generator',
-  template: `
-    <button (click)="generateExcel()">Generar Excel</button>
-  `,
+  selector: 'excel-generator',
+  templateUrl: 'excel-generator.component.html',
 })
 export class ExcelGeneratorComponent {
   constructor(private excelService: ExcelService) {}
